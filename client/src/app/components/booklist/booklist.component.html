@@ -1,0 +1,38 @@
+
+<div class="row" style="margin-top:50px">
+  <table border="1" style="color: gray;margin-top:50px">
+    <tr>
+      <th>Name</th>
+      <th>Genre</th>
+      <th></th>
+      <th></th>
+
+    </tr>
+    <tr *ngFor="let bk of allBooks;let i = index">
+      <td>{{bk.name}}</td>
+      <td>{{bk.genre}}</td>
+      <td><button type="submit" (click)="listtopic(i)" style="background-color: yellowgreen;float: left;">Topics</button>
+      </td>
+      <td></td>
+
+
+    </tr>
+  </table>
+
+</div>
+<div [hidden]="!showtopic" class="row" style="margin-top:50px">
+  <table border="1" style="color: gray;margin-top:50px">
+    <tr>
+      <th>Topics</th>
+
+    </tr>
+   
+    <tr *ngFor="let tpc of topiclist">
+      <td>{{tpc.topicname}}</td>
+    </tr>
+  </table>
+
+</div>
+<!-- <div class="row" style="padding-right: 30px;">
+  <button routerLink="/add" style="background-color: lightsalmon;float: left;">Add Book</button>
+</div> -->

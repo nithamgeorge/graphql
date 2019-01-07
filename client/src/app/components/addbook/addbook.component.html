@@ -1,0 +1,31 @@
+
+
+<div class="row" style="margin-top:50px">
+  <header>Add Book</header>
+  <div><input  [(ngModel)]="name" type='text' placeholder='Book Name'/></div><br>
+  <div><input  [(ngModel)]="genre"  type='text' placeholder='Genre' /></div><br>
+</div>
+<button
+  (click)="addBook()">
+  Submit
+</button>
+
+<!-- <html>
+<body>
+
+<h2>Add Book</h2>
+
+<form>
+  Book name:<br>
+  <input [(ngModel)]="name" type='text' placeholder='Book Name'>
+  <br>
+  Genre:<br>
+  <input  [(ngModel)]="genre"  type='text' placeholder='Genre' >
+  <br>
+  <br>
+  <button
+  (click)="createBook()">
+  Add Book
+</button></form> 
+</body>
+</html> -->
